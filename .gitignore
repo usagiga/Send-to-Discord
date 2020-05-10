@@ -1,3 +1,11 @@
+# OS
+Thumbs.db
+*.lnk
+[Dd]esktop.ini
+.DS_Store
+.Spotlight-V100
+Network Trash Folder/
+
 # Editors
 .idea/
 .vs/
