@@ -30,5 +30,10 @@
     "show_matches": [
       "*://*/*"
     ]
-  }
+  },
+  "permissions": [
+    "https://discord.com/api/webhooks/*",
+    "activeTab",
+    "storage"
+  ]
 }
