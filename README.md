@@ -15,7 +15,7 @@ If you wanna know why is it needed, read below.
 | -- | -- |
 | `https://discord.com/api/webhooks/*` | To send message to specific channel on Discord. |
 | `activeTab` | To get opened page's title and its URL. |
-| `storage` | To store your webhook URL on Discord. |
+| `storage` | To store your Discord webhook URLs. |
 
 
 ## Usage
