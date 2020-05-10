@@ -1,6 +1,6 @@
-# ${REPO_NAME}
+# Send-to-Discord
 
-${REPO_DESC}
+Click to send the link of the opened page into your Discord servers
 
 
 ## Install
@@ -8,7 +8,7 @@ ${REPO_DESC}
 
 ### Permissions
 
-${REPO_NAME} use these permissions.
+Send-to-Discord use these permissions.
 If you wanna know why is it needed, read below.
 
 | Permission | Use |
