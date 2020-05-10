@@ -5,11 +5,30 @@
   "description": "Click to send the link of the opened page into your Discord servers",
   "homepage_url": "https://github.com/usagiga/Send-to-Discord",
   "icons": {
-    "48": "assets/icon/48.png",
-    "96": "assets/icon/96.png"
+    "48": "assets/icon/Discord-Logo-Color.svg",
+    "96": "assets/icon/Discord-Logo-Color.svg"
   },
-  "content_scripts": {
-    "matches": ["*://*/*"],
-    "js": ["sendToDiscord.js"]
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "match_about_blank": false,
+      "js": [
+        "sendToDiscord.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "19": "assets/icon/Discord-Logo-Color.svg",
+      "38": "assets/icon/Discord-Logo-Color.svg"
+    },
+    "default_title": "Send to Discord",
+    "default_popup": "pages/popup.html",
+    "show_matches": [
+      "*://*/*"
+    ]
   }
 }
