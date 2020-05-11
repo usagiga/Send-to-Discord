@@ -36,6 +36,10 @@
       "*://*/*"
     ]
   },
+  "options_ui": {
+    "page": "page/option.html",
+    "browser_style": true
+  },
   "permissions": [
     "https://discord.com/api/webhooks/*",
     "activeTab",
