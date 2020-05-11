@@ -5,6 +5,16 @@ The Firefox extension which clicks to send the link of the opened page into your
 
 ## Install
 
+Perhaps, this will reveal on Firefox Add-On site.
+
+
+### For developers
+
+1. Download it
+1. Open `about:debugging` on your Firefox
+1. Choose `This Firefox`
+1. Click `Load Temporary Add-on...` and choose `manifest.json` of Send to Discord
+
 
 ### Permissions
 
@@ -20,7 +30,27 @@ If you wanna know why is it needed, read below.
 
 ## Usage
 
-1. 
+1. Click "Send to Discord" on address bar.
+1. Click a channel you wanna send URL on the pop-up window.
+1. Soon after the URL send to a specified channel.
+
+To know how to configure, see Configuration.
+
+
+### Configuration
+
+
+#### To add your channel
+
+1. Click `Add a channel...` button on its pop-up window.
+1. Specify channel name and its Webhook URL.
+    - You can obtain Webhook URL in Server settings on Discord. See also [Intro to Webhooks – Discord](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks "Intro to Webhooks – Discord")
+1. Then, press `Add` button.
+
+
+#### To change a format of message
+
+WIP
 
 
 ## License
