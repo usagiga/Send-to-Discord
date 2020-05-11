@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Send-to-Discord",
+  "name": "Send to Discord",
   "version": "1.0",
   "description": "Click to send the link of the opened page into your Discord servers",
   "homepage_url": "https://github.com/usagiga/Send-to-Discord",
