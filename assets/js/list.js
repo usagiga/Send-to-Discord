@@ -1,4 +1,6 @@
 (function () {
+    const srcUrlKey = "\${srcUrl}";
+
     function onLoad() {
         let addChBtn = document.querySelector("#add-channel-button");
 
@@ -68,13 +70,19 @@
         listView.insertBefore(listItem, listSeparator);
     }
 
+    function getRequestBody(srcUrl) {
+        let reqBody = `{"content":"${srcUrlKey}""}`;
+
+        return reqBody.replace(srcUrlKey, srcUrl);
+    }
+
     function sendToChannel(dstUrl, srcUrl) {
         const init = {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: `{"content":"${srcUrl}""}`
+            body: getRequestBody(srcUrl)
         };
 
         return fetch(dstUrl, init);
