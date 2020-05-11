@@ -4,6 +4,10 @@
     display: none !important;
 }
 
+.error-message {
+    color: #F00;
+}
+
 /* Delete button */
 
 .panel-list-item:hover .delete {
