@@ -71,7 +71,7 @@
     }
 
     function getRequestBody(srcUrl) {
-        let reqBody = `{"content":"${srcUrlKey}""}`;
+        let reqBody = `{"content":"${srcUrlKey}"}`;
 
         return reqBody.replace(srcUrlKey, srcUrl);
     }
