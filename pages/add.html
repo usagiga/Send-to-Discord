@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a channel | Send to Discord</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="panel-section panel-section-header">
+    <div class="icon-section-header">
+        <img src="/assets/icon/Discord-Logo-Color.svg" alt="Discord-Logo-Color">
+    </div>
+    <div class="text-section-header">Add a channel</div>
+</header>
+
+<div class="panel">
+    <div class="panel-section panel-section-formElements">
+        <div class="panel-formElements-item">
+            <label for="placeholder01">Name:</label>
+            <input type="text"
+                   placeholder="Your awesome channel name here"
+                   id="placeholder01"/>
+        </div>
+
+        <div class="panel-formElements-item">
+            <label for="placeholder02">Webhook:</label>
+            <input type="text"
+                   placeholder="https://discord.com/api/webhooks/..."
+                   id="placeholder02"/>
+        </div>
+
+        <p id="error-message" class="error-message invisible"></p>
+    </div>
+</div>
+</div>
+
+<div class="panel">
+    <div class="panel-section panel-section-footer">
+        <div class="panel-section-footer-button default">Add</div>
+    </div>
+</div>
+
+<script src="/assets/js/add.js"></script>
+</body>
+</html>

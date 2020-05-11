@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send to Discord</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="panel-section panel-section-header">
+    <div class="icon-section-header">
+        <img src="/assets/icon/Discord-Logo-Color.svg" alt="Discord-Logo-Color">
+    </div>
+    <div class="text-section-header">Send to Discord</div>
+</header>
+
+<div class="panel">
+    <div class="panel-section panel-section-list">
+        <div class="panel-list-item">
+            <div class="text">Test Channel 1</div>
+            <div class="spinner invisible"></div>
+            <div class="delete"></div>
+        </div>
+        <div class="panel-list-item" onclick="sendToChannel()">
+            <div class="text">Test Channel 2</div>
+            <div class="delete"></div>
+        </div>
+        <div class="panel-section-separator"></div>
+        <div id="add-channel-button" class="panel-list-item">
+            <div class="icon"></div>
+            <div class="text">Add a channel...</div>
+            <div class="text-shortcut"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/js/list.js"></script>
+</body>
+</html>
