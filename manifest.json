@@ -4,6 +4,11 @@
   "version": "1.0",
   "description": "Click to send the link of the opened page into your Discord servers",
   "homepage_url": "https://github.com/usagiga/Send-to-Discord",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "me.usagiga.send-to-discord"
+    }
+  },
   "icons": {
     "48": "assets/icon/Discord-Logo-Color.svg",
     "96": "assets/icon/Discord-Logo-Color.svg"
