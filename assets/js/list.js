@@ -1,10 +1,13 @@
 (function() {
     function onLoad() {
         let addChBtn = document.querySelector("#add-channel-button");
-        addChBtn.addEventListener("click", openAddChannelPage);
+
+        // Register event handlers
+        addChBtn.addEventListener("click", onClickedAddButton);
     }
 
-    function openAddChannelPage() {
+    function onClickedAddButton() {
+        // Go on to the add page
         window.location.assign("/pages/add.html");
     }
 

@@ -1,6 +1,13 @@
 (function() {
     function onLoad() {
-        console.log("NOP");
+        let addChBtn = document.querySelector("#add-channel-button");
+
+        // Register event handlers
+        addChBtn.addEventListener("click", onClickedAddButton);
+    }
+
+    function onClickedAddButton() {
+
     }
 
     function appendChannel() {
