@@ -1,6 +1,6 @@
-# Send-to-Discord
+# Send to Discord
 
-Click to send the link of the opened page into your Discord servers
+The Firefox extension which clicks to send the link of the opened page into your Discord servers.
 
 
 ## Install
@@ -8,7 +8,7 @@ Click to send the link of the opened page into your Discord servers
 
 ### Permissions
 
-Send-to-Discord use these permissions.
+Send to Discord use these permissions.
 If you wanna know why is it needed, read below.
 
 | Permission | Use |
