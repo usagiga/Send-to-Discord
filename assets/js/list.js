@@ -74,7 +74,7 @@
             headers: {
                 "Content-Type": "application/json"
             },
-            body: `{"content":"${srcUrl}","username":"Usagiga","avatar_url":"https://i.imgur.com/hodSYp3.png"}`
+            body: `{"content":"${srcUrl}""}`
         };
 
         return fetch(dstUrl, init);
