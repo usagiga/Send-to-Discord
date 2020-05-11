@@ -13,17 +13,6 @@
     "48": "assets/icon/Discord-Logo-Color.svg",
     "96": "assets/icon/Discord-Logo-Color.svg"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*/*"
-      ],
-      "match_about_blank": false,
-      "js": [
-        "sendToDiscord.js"
-      ]
-    }
-  ],
   "page_action": {
     "browser_style": true,
     "default_icon": {
