@@ -37,7 +37,7 @@
     ]
   },
   "options_ui": {
-    "page": "page/option.html",
+    "page": "pages/option.html",
     "browser_style": true
   },
   "permissions": [
