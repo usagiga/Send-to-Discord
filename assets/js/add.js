@@ -74,7 +74,7 @@
     function validateWebhookURL(url) {
         if (typeof (url) === "undefined") return "Something wrong. Please reopen it.";
         if (url === "" || url === null) return "Webhook URL must NOT be empty.";
-        if (!url.startsWith("https://discord.com/api/webhooks/" || !url.startsWith("https://discordapp.com/api/webhooks/")))
+        if (!url.startsWith("https://discord.com/api/webhooks/") && !url.startsWith("https://discordapp.com/api/webhooks/"))
             return "Webhook URL must be Discord Webhook URL.";
 
         return "";
