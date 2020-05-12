@@ -50,7 +50,10 @@ To know how to configure, see Configuration.
 
 #### To change a format of message
 
-WIP
+1. Open `about:addons`.
+1. Open *Send to Discord* Setting page.
+1. Edit `Webhook Request Body` as you like.
+    - The app uses *POST /webhooks/{webhook.id}/{webhook.token}* . So, `Webhook Request Body` means request body of this API. See more details at [Discord Developer Portal — Documentation — Webhook](https://discord.com/developers/docs/resources/webhook "Discord Developer Portal — Documentation — Webhook")
 
 
 ## License
