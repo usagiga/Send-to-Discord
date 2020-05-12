@@ -69,15 +69,23 @@
     }
 
     function sendToChannel(dstUrl, srcUrl) {
-        const init = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: `{"content":"${srcUrl}""}`
+        const reqBodyKey = {
+            webhookReqBody: '{"content":"${srcUrl}"}'
         };
 
-        return fetch(dstUrl, init);
+        return browser.storage.sync.get(reqBodyKey)
+            .then(item => {
+                const webhookReqBody = item.webhookReqBody.replace("${srcUrl}", srcUrl);
+                const init = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: webhookReqBody
+                };
+
+                return fetch(dstUrl, init);
+            });
     }
 
     function deleteChannel(url) {
