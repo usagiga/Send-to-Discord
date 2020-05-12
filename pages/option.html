@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<div class="panel">
+    <div class="panel-section panel-section-formElements">
+        <p class="error-message">IF YOU DIDN'T KNOW WHAT IS THIS, YOU SHOULD NOT EDIT ANYTHING HERE.</p>
+        <p>Or, see <a href="https://discord.com/developers/docs/resources/webhook">Discord documentation</a>.</p>
+
+        <div class="panel-formElements-item">
+            <label for="webhook-req-body">Webhook Request Body:</label>
+            <input type="text"
+                   placeholder='{"content":"${srcUrl}"}'
+                   id="webhook-req-body"/>
+        </div>
+
+        <div class="panel-formElements-item">
+            <button id="save-button" class="default">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/js/option.js"></script>
+</body>
+</html>

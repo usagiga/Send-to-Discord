@@ -69,23 +69,24 @@
         // Append new item
         listView.insertBefore(listItem, listSeparator);
     }
-
-    function getRequestBody(srcUrl) {
-        let reqBody = `{"content":"${srcUrlKey}"}`;
-
-        return reqBody.replace(srcUrlKey, srcUrl);
-    }
-
     function sendToChannel(dstUrl, srcUrl) {
-        const init = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: getRequestBody(srcUrl)
+        const reqBodyKey = {
+            webhookReqBody: '{"content":"${srcUrl}"}'
         };
 
-        return fetch(dstUrl, init);
+        return browser.storage.sync.get(reqBodyKey)
+            .then(item => {
+                const webhookReqBody = item.webhookReqBody.replace("${srcUrl}", srcUrl);
+                const init = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: webhookReqBody
+                };
+
+                return fetch(dstUrl, init);
+            });
     }
 
     function deleteChannel(url) {
